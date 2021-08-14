@@ -18,6 +18,7 @@ public class Dealing {
 		Deck deck = new Deck();
 		Scanner kb = new Scanner(System.in);
 		
+		deck.shuffle();
 		try {
 		System.out.println("Number of cards");
 		int numCards = kb.nextInt();
@@ -32,7 +33,6 @@ public class Dealing {
 			}
 			
 			for (Card card : hand) {
-				deck.shuffle();
 				System.out.println(card);
 			}
 		} 
