@@ -10,22 +10,25 @@ public class BlackJackHand extends Hand {
 		}
 		return value;
 	}
-	
+
 	public boolean isBlackjack() {
-		if(getHandValue() == 21 && handOfCards.size() == 2) {
+		if (getHandValue() == 21 && handOfCards.size() == 2) {
 			System.out.println("BlackJack, You Win!");
 			return true;
 		}
 		return false;
 	}
-	
+
 	public boolean isBust() {
-		if(getHandValue() > 21) {
+		if (getHandValue() > 21) {
 			System.out.println("Bust! LOSER!");
 			return true;
 		}
-			return false;
-		}
-	
-	
+		return false;
+	}
+
+//	@Override
+//	public String toString() {
+//		return "You Have " + numOfCards;
+//	}
 }
