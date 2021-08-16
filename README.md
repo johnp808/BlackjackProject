@@ -26,4 +26,4 @@ you can keep playing until the deck of cards runs out.
 
  * figuring out how to deal cards to the dealer as well as the player. I ended up instantiating a new player and dealer object.
 
- * had issues figuring out how to and when to restart the game. I still had issues with this.
+ * had issues figuring out how to and when to restart the game. Ended up using a boolean but I still had some issues with this.
