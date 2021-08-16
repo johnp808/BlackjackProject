@@ -35,9 +35,7 @@ public class BlackJackApp {
 			else if (!newDealer.getHand().isBust()) {
 				newDealer.getHand().isBust();
 				} 
-			 else { 
 				 dealerTurn();
-			 }
 			System.out.println("------------------------------------- \n");
 					results();
 		}
