@@ -13,8 +13,8 @@ public class Dealer extends Player {
 		dealerDeck.dealCard();
 	}
 
-	public int displaySecondCard() {
-		System.out.println("Dealers Card: " + handOfCards.get(handOfCards.size() - 1));
-		return this.handOfCards.get(handOfCards.size() - 1).getValue();
+	public String displaySecondCard() {
+		System.out.println("Dealer has: [" + hand.getHandOfCards().get(1) + "]");
+		return "Dealer has: " + hand.getHandOfCards().get(1).getValue();
 	}
 }

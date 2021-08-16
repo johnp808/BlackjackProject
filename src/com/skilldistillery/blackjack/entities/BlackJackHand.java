@@ -13,7 +13,7 @@ public class BlackJackHand extends Hand {
 
 	public boolean isBlackjack() {
 		if (getHandValue() == 21 && handOfCards.size() == 2) {
-			System.out.println("BlackJack, You Win!");
+			System.out.println("BlackJack, We Have A Winner! \n");
 			return true;
 		}
 		return false;
@@ -21,7 +21,7 @@ public class BlackJackHand extends Hand {
 
 	public boolean isBust() {
 		if (getHandValue() > 21) {
-			System.out.println("Bust! LOSER!");
+//			System.out.println("Bust! LOSER!! \n");
 			return true;
 		}
 		return false;

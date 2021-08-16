@@ -23,14 +23,19 @@ public abstract class Hand {
 	}
 
 	public void clear() {
-		handOfCards.clear();
+		handOfCards.removeAll(handOfCards);
 	}
 
 	public abstract int getHandValue();
 
 	@Override
 	public String toString() {
-		return "You Have" + handOfCards;
+		return " " + handOfCards;
 	}
-
+	public List<Card> getHandOfCards() {
+		return handOfCards;
+	}
+	public void setHandOfCards(List<Card> handOfCards) {
+		this.handOfCards = handOfCards;
+	}
 }

@@ -1,6 +1,6 @@
 package com.skilldistillery.blackjack.entities;
 
-public class Player extends BlackJackHand {
+public class Player {
 	protected BlackJackHand hand = new BlackJackHand();
 // needs to be able to be dealt cards into their own hand, face up
 // as well as the dealer being dealt one card face down and then face up
